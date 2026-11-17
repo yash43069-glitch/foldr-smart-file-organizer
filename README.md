@@ -4,6 +4,9 @@
 
 Foldr is a browser-based smart file organizer designed to simplify file management. It scans user-selected folders, identifies file types, previews organization plans, and automatically sorts files into structured categories.
 
+## Preview
+
+![Foldr Dashboard](./foldr-dashboard.png)
 ## Features
 
 - **Smart File Classification:** Automatically identifies files using their extensions.
