@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --foldr-workspace: #F3EEFF;
+    --foldr-surface: #FFFFFF;
+    --foldr-text: #24202D;
+    --foldr-muted: #827A91;
+    --foldr-violet: #9161D8;
+    --foldr-violet-soft: #B99BEF;
+    --foldr-lavender: #EEE6FF;
+    --foldr-border: #EBE5F3;
+    --foldr-success: #27AE83;
+    --foldr-error: #E36A7A;
+  }
+
+  html,
+  body {
+    background-color: #F3EEFF;
+    color: #24202D;
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+}
+
+.tabular-figures {
+  font-variant-numeric: tabular-nums;
+}
+
+.foldr-card {
+  background-color: #FFFFFF;
+  border: 1px solid #EBE5F3;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(36, 32, 45, 0.035);
+}
+
+.foldr-card-interactive {
+  background-color: #FFFFFF;
+  border: 1px solid #EBE5F3;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(36, 32, 45, 0.035);
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.foldr-card-interactive:hover {
+  border-color: #B99BEF;
+  box-shadow: 0 10px 26px rgba(145, 97, 216, 0.09);
+  transform: translateY(-2px);
+}
+
+/* Soft minimalist scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3EEFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D7C8F5;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B99BEF;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .foldr-card-interactive {
+    transition: none;
+  }
+  .foldr-card-interactive:hover {
+    transform: none;
+  }
+}
